@@ -101,29 +101,101 @@ using namespace std;
 //     return 0;
 // }
 
-void printSomething(){
-    cout << "Hello" << endl;
-}
+// void printSomething(){
+//     cout << "Hello" << endl;
+// }
 
-int returnInt(){
-    srand(time(0));
-    return rand()%10 ;
-}
+// int returnInt(){
+//     srand(time(0));
+//     return rand()%10 ;
+// }
 
-int factorial(int n){
-    if (n == 0){
-        return 1;
-    }
-    return n * factorial(n-1);
-}
+// int factorial(int n){
+//     if (n == 0){
+//         return 1;
+//     }
+//     return n * factorial(n-1);
+// }
 
-void printArray(int arr[], int size){
-    for (int i = 0; i < size; ++i) {
-        cout << arr[i] << endl;
-    }
-}
+// void printArray(int arr[], int size){
+//     for (int i = 0; i < size; ++i) {
+//         cout << arr[i] << endl;
+//     }
+// }
+
+// void myFunct(int x) {
+//     x = 100;
+// }
+
+// void myFunct(int *x) {
+//     *x = 100;
+// }
+
+// bool isPalindrome(int num) {
+//     //complete the function
+//     int x, digit, rev = 0;
+//     x = num;
+//      do
+//      {
+//          digit = num % 10;
+//          rev = (rev * 10) + digit;
+//          num = num / 10;
+//      } while (num != 0);
+
+//     if (rev == x)
+//         return true;
+//     else
+//         return false;
+
+// }
+
+// int main() {
+//     int n;
+//     cin >>n;
+//     cout << isPalindrome(n) << endl;
+
+    
+    // if(isPalindrome(n)) {
+    //     cout <<n <<" is a palindrome";
+    // }
+    // else {
+    //     cout << n <<" is NOT a palindrome";
+    // }
+//     return 0;
+// }
+
+
+// class BankAccount {
+//     private:
+//         /* data */
+//     public:
+//         void sayHi() {
+//             cout << "Hi" << endl;
+//         }
+// };
+
+
+class myClass{
+    public:
+        myClass(string nm){
+            cout << "Constructor" << endl;
+            setName(nm);
+        }
+        void setName(string x){
+            name = x;
+        }
+        string getName(){
+            return name;
+        }
+    private:
+        string name;
+};
 
 int main(){
-    int myArray[5] {1,2,3,4,5};
-    printArray(myArray, 5);
+    myClass myObj("John");
+    myClass myObj2("Mary");
+    // myObj.setName("Nacim");
+    cout << myObj.getName() << endl;
+    cout << myObj2.getName() << endl;
+    return 0;
 }
