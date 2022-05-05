@@ -3,8 +3,6 @@
 #include <ctime>
 using namespace std;
 
-#include <iostream>
-using namespace std; 
 
 class Queue { 
 	int size; 
@@ -14,6 +12,7 @@ class Queue {
 	Queue() {
 		size = 0;
 		queue = new int[100];
+		cout << "Queue created, size: " << size << endl;
 	}
 	void remove() { 
 		if (size == 0) { 
@@ -38,12 +37,21 @@ class Queue {
 		cout <<endl;
 	}
 	//your code goes here
-	
+	void add(int n){
+		if (size == 0) { 
+			queue[size] = n; size++;
+			return; 
+		} 
+		else { 
+			queue[size] = n; size++;
+			return;
+			} 
+	}
 }; 
 
 int main() { 
 	Queue q; 
-	q.add(42); q.add(2); q.add(8); q.add(1); 
+	q.add(40); q.add(2); q.add(8); q.add(1); 
 	q.print();
 	q.remove(); 
 	q.add(128); 
