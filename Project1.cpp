@@ -174,28 +174,27 @@ using namespace std;
 //         }
 // };
 
+// class myClass{
+//     public:
+//         myClass(string nm){
+//             cout << "Constructor" << endl;
+//             setName(nm);
+//         }
+//         void setName(string x){
+//             name = x;
+//         }
+//         string getName(){
+//             return name;
+//         }
+//     private:
+//         string name;
+// };
 
-class myClass{
-    public:
-        myClass(string nm){
-            cout << "Constructor" << endl;
-            setName(nm);
-        }
-        void setName(string x){
-            name = x;
-        }
-        string getName(){
-            return name;
-        }
-    private:
-        string name;
-};
-
-int main(){
-    myClass myObj("John");
-    myClass myObj2("Mary");
-    // myObj.setName("Nacim");
-    cout << myObj.getName() << endl;
-    cout << myObj2.getName() << endl;
-    return 0;
-}
+// int main(){
+//     myClass myObj("John");
+//     myClass myObj2("Mary");
+//     // myObj.setName("Nacim");
+//     cout << myObj.getName() << endl;
+//     cout << myObj2.getName() << endl;
+//     return 0;
+// }
